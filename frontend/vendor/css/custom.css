@@ -39,9 +39,10 @@
 /* ==================================== 1. Estrutura Principal  ====================================*/
 
 body{
-    /*background-image: url(../../img/ESUS_BG.png);
+    background-image: url(../../img/background.png);
     transition: background-color .5s;
-    background-position: bottom;*/
+    background-position: left;
+    background-repeat: repeat-y;
     color: #000;
     font-family: 'Open Sans', sans-serif;
     text-align: justify !important;
@@ -90,7 +91,7 @@ body::-webkit-scrollbar-track {
 }
  
 body::-webkit-scrollbar-thumb {
-  background-color: #84BFEF;
+  background-color: #cbbfb4;
   outline: 0px solid slategrey;
 }
 
@@ -98,24 +99,24 @@ body::-webkit-scrollbar-thumb {
 /* ==================================== 2. Header  ====================================*/
 
 .header-banner{
-  height: 90px;
+  height: 140px;
   position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
-  /*background-image: url('../../img/ESUS_banner.png');
-  background-size: cover;*/
+  background-image: url('../../img/logo_IMS.png');
+  background-size: cover;
 }
 
 .header-menu{
   border-bottom: 1px solid #ddd;
-  height: 25px;
+  height: 55px;
   position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
-  background-color: #b6a696;
-  border-bottom: 5px solid #b6a696;
+  background-color: #cbbfb4;
+  border-bottom: 5px solid #cbbfb4;
 }
 
 .header-menu span{
@@ -141,9 +142,13 @@ body::-webkit-scrollbar-thumb {
 }
 
 .menu-user a{
-  color: white;
+  color: black;
   text-decoration: none;
-  font-weight: normal;
+  font-weight: bold;
+  font-size: 22px;
+}
+.button-header {
+  padding-top: 10px;
 }
 
 .menu-user a:hover{
