@@ -8,8 +8,7 @@ export default class extends AbstracView {
 
     async getHtml(){
         return `
-            <h1>Página 1</h1>
-            <p> POSTS </p>
+           
         `;
     }
 }

@@ -38,30 +38,78 @@
 
 /* ==================================== 1. Estrutura Principal  ====================================*/
 
+html{
+  font-size: 16px;
+}
+
+h1 { 
+  font-size: 1.8rem;
+	letter-spacing: 5px;
+	color: var(--color-title);
+	opacity: 1;
+}
+h2 { 
+  font-size: 1.5rem;
+  letter-spacing: 4px;
+  color: var(--color-main);
+  opacity: 1;
+}
+h3 { 
+  font-size: 1.17rem;
+  letter-spacing: 3px;
+  color: var(--color-main);
+}
+h4 {
+  font-size: 1.12rem; 
+  letter-spacing: 2px;
+  color: var(--color-main);
+}
+h5 { 
+  font-size: .83rem; 
+  letter-spacing: 1px;
+  color: var(--color-main);
+}
+h6 { 
+  font-size: .75rem; 
+  letter-spacing: 1px;
+  color: var(--color-main);
+}
+
 body{
     background-image: url(../../img/background.png);
     transition: background-color .5s;
+    background-color: #F5F5EF;
     background-position: left;
     background-repeat: repeat-y;
     color: #000;
     font-family: 'Open Sans', sans-serif;
     text-align: justify !important;
-    height: 100vh;
-    overflow-x: hidden;
 }
 
-body .body-ims{
-  position: absolute;
-  width: 100%;
-  background-color: rgba(255,255,255,.5);
+::-webkit-scrollbar {
+  width: 10px;
 }
 
-.body-ims{
-  min-height: 100vh;
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+.container-main{
+  margin-top: 2rem;
 }
 
 p{
-  font-size: 18px !important;
   text-align: justify !important;
 }
 
@@ -78,22 +126,6 @@ a:clicked{
  color: #c0b3a5; 
 }
 
-.body-ims h5{
-  font-weight: bold;
-}
-
-body::-webkit-scrollbar {
-  width: 0.2em;
-}
- 
-body::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
-}
- 
-body::-webkit-scrollbar-thumb {
-  background-color: #cbbfb4;
-  outline: 0px solid slategrey;
-}
 
 
 /* ==================================== 2. Header  ====================================*/
@@ -104,19 +136,19 @@ body::-webkit-scrollbar-thumb {
   top: 0px;
   left: 0px;
   width: 100%;
-  background-image: url('../../img/logo_IMS.png');
-  background-size: cover;
+  /*background-image: url('../../img/logo_IMS.png');
+  background-size: cover;*/
 }
 
 .header-menu{
   border-bottom: 1px solid #ddd;
-  height: 55px;
+  height: 45px;
   position: relative;
   top: 0px;
   left: 0px;
   width: 100%;
-  background-color: #cbbfb4;
-  border-bottom: 5px solid #cbbfb4;
+  background-color: #DCDCDC;
+  border-bottom: 5px solid #DCDCDC;
 }
 
 .header-menu span{
@@ -145,7 +177,6 @@ body::-webkit-scrollbar-thumb {
   color: black;
   text-decoration: none;
   font-weight: bold;
-  font-size: 22px;
 }
 .button-header {
   padding-top: 10px;
@@ -166,17 +197,25 @@ body::-webkit-scrollbar-thumb {
 /* ==================================== 3. Footer  ====================================*/
 
 footer{
-  background-color: white;
+  background-color: #ededed;
   padding-bottom: 10px;
+  position: fixed;
+  height: 150px;
+  bottom: 0;
+  width: 100%;
 }
-img-footer{
+.img-footer{
   margin: auto;
   display: block;
+  width: 10%;
 }
 .footer-text-payment{
   padding-top: 20px;
   padding-bottom: 0px;
   margin-bottom: 5px;
+}
+.footer-icon {
+  font-size: 1.3rem;
 }
 
 
@@ -208,7 +247,57 @@ img-footer{
   p{font-size: 1em !important;}
   .banner_logo{width: 140px;}
   .banner_title{width: 0px;}
+  .img-banner{height: 60px; width: 100%;}
   .header-banner{height:60px; text-align: center;}
+}
+
+@media screen and (min-width: 2565px) {
+  html{
+    font-size: 28px;
+  }
+}
+@media screen and (max-width: 2565px) {
+  html{
+    font-size: 26px;
+  }
+}
+@media screen and (max-width: 1930px) {
+  html{
+    font-size: 24px;
+  }
+}
+@media screen and (max-width: 1685px) {
+  html{
+    font-size: 20px;
+  }
+}
+@media screen and (max-width: 1445px) {
+  html{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1024px) {
+  html{
+    font-size: 16px;
+  }
+  .header-banner{height:100px;}
+}
+@media screen and (max-width: 870px) {
+  html{
+    font-size: 14px;
+  }
+  .header-banner{height:80px;}
+}
+@media screen and (max-width: 670px) {
+  html{
+    font-size: 13px;
+  }
+  .header-banner{height:60px;}
+}
+@media screen and (max-width: 450px) {
+  html{
+    font-size: 12px;
+  }
 }
 
 @media screen and (max-width: 990px) {
